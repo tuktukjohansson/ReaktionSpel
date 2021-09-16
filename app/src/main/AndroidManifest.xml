@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MittReaktionSpel">
         <activity
+            android:name=".MainGameActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
