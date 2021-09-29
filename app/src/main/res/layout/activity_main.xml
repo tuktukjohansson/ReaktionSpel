@@ -4,30 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EAFDFC"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonp"
-        android:layout_width="215dp"
-        android:layout_height="86dp"
-        android:text="Button"
+        android:layout_width="249dp"
+        android:layout_height="106dp"
+        android:backgroundTint="#001AFF"
+        android:text="PLAY!"
+        android:textColor="#FFE500"
+        android:textSize="34sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592"
         app:rippleColor="#009688"
-        app:strokeColor="#000000" />
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/buttoni"
-        android:layout_width="159dp"
-        android:layout_height="45dp"
+        android:layout_width="151dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#F4B515"
         android:text="Instructions"
+        android:textColor="#FF4343"
+        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonp" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonp"
+        app:layout_constraintVertical_bias="0.308"
+        app:strokeWidth="2dp" />
 
     <ImageView
         android:id="@+id/infoview"
@@ -56,5 +67,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.116"
         app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="249dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545"
+        app:srcCompat="@drawable/whatsthecard" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8F8F8F"
+        android:onClick="quitgame"
+        android:text="Quit Game :("
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoni"
+        app:layout_constraintVertical_bias="0.678"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             infocloser.setVisibility(View.GONE)
         }
         // ClickEvents
+    }
+    fun quitgame(view: View){
+        this@MainActivity.finish()
+        exitProcess(0)
     }
 }
 
