@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CACACA">
+
+    <TextView
+        android:id="@+id/scoreview"
+        android:layout_width="271dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/yellowtext"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/difficultyview"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/difficulty"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreview" />
+
+    <TextView
+        android:id="@+id/losttext"
+        android:layout_width="271dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="276dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="You've lost!, Play Again?"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/redbutton"
+        android:layout_width="203dp"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:foregroundGravity="center"
+        android:onClick="RestartGame"
+        android:scaleType="fitCenter"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/losttext"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/redbutton" />
+
+    <ImageButton
+        android:id="@+id/bluebutton"
+        android:layout_width="207dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:onClick="QuitGame"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redbutton"
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/bluebutton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="351dp"
+        android:layout_height="298dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eloncrying"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,25 +8,6 @@
     tools:context=".MainGameActivity">
 
 
-    <TextView
-        android:id="@+id/difficulty"
-        android:layout_width="296dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="4dp"
-        android:background="#FFF9C1"
-        android:gravity="center"
-        android:shadowDx="20"
-        android:shadowDy="20"
-        android:shadowRadius="10"
-        android:text="Welcome"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#00CD08"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/startgamebutton"
         android:layout_width="155dp"
@@ -49,10 +30,10 @@
         android:layout_height="282dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintVertical_bias="0.463"
         app:srcCompat="@drawable/cards" />
 
     <ImageButton
@@ -133,26 +114,43 @@
 
     <TextView
         android:id="@+id/scoretextbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/scoreview"
+        android:gravity="center"
         android:text="Score 0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Answerbox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/difficulty" />
+        app:layout_constraintTop_toBottomOf="@+id/difficulty"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="209dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/difficulty"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Answerbox"
-        android:layout_width="327dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="261dp"
+        android:layout_height="120dp"
         android:gravity="center"
         android:textColor="#C10000"
-        android:textSize="60dp"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagecard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/difficulty" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

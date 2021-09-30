@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
         // ClickEvents
     }
     fun quitgame(view: View){
-        this@MainActivity.finish()
-        exitProcess(0)
+        finishAffinity()
     }
 }
 
