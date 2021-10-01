@@ -77,7 +77,7 @@
         app:srcCompat="@drawable/bluebutton" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/elon"
         android:layout_width="351dp"
         android:layout_height="298dp"
         android:visibility="gone"

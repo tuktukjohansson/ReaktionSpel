@@ -114,32 +114,33 @@
 
     <TextView
         android:id="@+id/scoretextbox"
-        android:layout_width="70dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/scoreview"
         android:gravity="center"
         android:text="Score 0"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/Answerbox"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/difficulty"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/difficulty"
         android:layout_width="209dp"
         android:layout_height="67dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/difficulty"
         android:gravity="center"
         android:text="Welcome"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:id="@+id/Answerbox"
@@ -151,6 +152,39 @@
         app:layout_constraintBottom_toTopOf="@+id/imagecard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/alert"
+        android:layout_width="368dp"
+        android:layout_height="202dp"
+        android:elevation="4dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/blacknow" />
+
+    <ImageButton
+        android:id="@+id/closealert"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@android:color/transparent"
+        android:elevation="5dp"
+        android:onClick="closeinfo"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/alert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/alert"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/info" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
